@@ -27,45 +27,67 @@ header{
 body{
  background-color: rgb(255, 255, 255);   
 }
-.card1{
-        border-radius: 0%;
-        padding: 30px;
-        margin: 300px;
-        width: 400px;
-        height: 300px;
-        border: 10px rgb(177, 192, 45) solid;
-}
-.image{
 
-        width: 202px;
-        height: 202px;
-        background-image: url(img/cardpf.jpeg);
-        background-position: 50% 50%;
-        margin: -100px 50px 0;
-        border-radius: 50%;
+/* Cards */
+
+.cards{
+    display: flex;
+    justify-content: space-around;
 }
-.txtCard1{
+
+/* Card */
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: .5em rgb(177, 192, 45) solid;
+    width: 40vw;
+}
+
+/* Perfil (nome e foto) */
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1em;
+    gap: 1em;
+    border-right: .5em #b1c02d solid;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(img/cardpf.jpeg);
+}
+
+.txtCard{
     text-align: center;
     font-size: 30px;
 }
-.icons{
+
+/* Sobre mim (descrição e ícones) */
+
+.sobre-mim{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    margin: 3%;
+    padding: 1em;
+    gap: 2em;
+    height: 100%;
 }
-.icons2{
 
-    position: absolute;
-    left: 25%;
-    top: 77.4%;
+.redes-sociais{
+    align-items: end;
 }
-.txtApresentacao{
-    justify-content: right;
-    text-align: right;
-    position: absolute;
-    top: 30%;
-    right: 20% ;
-    padding: 20%;
-    left: -10%;
+
+.descricao{
+    font-size: 1.5em;
+    text-align: justify;
 }
